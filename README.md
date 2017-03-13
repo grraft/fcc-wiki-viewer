@@ -1,2 +1,2 @@
-# fcc-wiki-viewer
+# wiki-viewer
 A freeCodeCamp inspired Wikipedia Article viewer

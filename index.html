@@ -1,0 +1,39 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+  <link rel='stylesheet' type='text/css' href='./styles.css' />
+</head>
+<body>
+  <script src="https://unpkg.com/vue"></script>
+	<!--<script src='./lib/vue.js'></script>-->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <div id='app'>
+    
+
+    <div v-if="landing">
+      <div class='landing__container'>
+        <div class='landing'>
+          <h1>Wiki-viewer</h1>
+          <input class='custom-input__landing' v-model="searchInput" type='text' placeholder='Lookup on Wikipedia' autofocus></input>
+          <br />
+          <button class='custom-button' v-on:click="search">Wiki Search</button>
+          <a href='https://en.wikipedia.org/wiki/Special:Random' target='_blank'>
+            <button class='custom-button'>I'm Feeling Wiki</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div v-else>
+      <a v-on:click='toggleLanding'><h1>Wiki-viewer</h1></a>
+      <span class='search__container'>
+        <input class='custom-input' v-model="searchInput" type='text' placeholder='Lookup on Wikipedia' autofocus></input>
+        <button class='custom-button' v-on:click="search">Wiki Search</button>
+      </span>
+
+      <results v-bind:results='results' />
+    </div>
+  </div>
+  <script src='./app.js'></script>  
+</body>
+</html>

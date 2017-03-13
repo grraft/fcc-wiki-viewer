@@ -1,0 +1,107 @@
+html {
+	background: #efefef;
+}
+
+#app {
+  font-family: Times, Georgia, Linux Libertine, Cambria, serif;
+}
+
+.block__no-results {
+	text-align: center;
+}
+
+.results {
+	margin: 10px 20px;
+	display: inline-flex;
+	max-width: 100%;
+}
+
+.result {
+	border-style: solid;
+	border-width: thin;
+	border-color: lightgrey;
+	padding: 10px 25px;
+	width: 310px;
+}
+
+.result__title {
+	font-size: large;
+}
+
+.result__image {
+	border-radius: 50%;
+	margin-bottom: 4px;
+}
+
+.result__extract {
+	margin-left: 10px;
+}
+
+.landing__container {
+	margin-top: 25vh;
+}
+
+.landing {
+	text-align: center;
+}
+
+/* controls */
+.search__container--landing {
+	margin-top: 10px;
+}
+
+.custom-input {
+	font-size: large;
+	padding: 10px;
+}
+
+.custom-input__landing {
+	font-size: large;
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 40%;
+	min-width: 300px;	
+}
+
+.custom-button {
+	padding: 10px;
+	font-size: large;
+}
+/* end controls */
+
+/* responsive grid */
+.block {
+	display: block;
+}
+
+.grid__element {
+	display: inline-flex;
+	/*min-height: 400px;*/
+}
+
+.grid__element-block {
+	display: block;
+	padding: 25px;
+	background-color: white;
+	border-radius: 4px;
+	margin: 8px;
+}
+
+@media (min-width: 921px) {
+	.grid__element {
+		width: 33%;
+	}
+}
+
+@media (max-width: 920px) {
+	.grid__element {
+		width: 50%;
+	}
+}
+
+@media (max-width: 720px) {
+	.grid__element {
+		width: 100%;
+	}
+}
+/* end responsive grid*/
